@@ -1,6 +1,7 @@
 # Lingua French
 
 The Easy Way to French.
+- **Demo video: https://drive.google.com/file/d/1F4WxMx-eUN-o6I1EgHgTYoZaMlJkQP2r/view?usp=sharing**
 
 ## ⚙️ Environment Setup
 Before running the project, you need to set up your development environment properly.
