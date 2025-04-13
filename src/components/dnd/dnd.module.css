@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.draggable {
+    padding: 12px;
+    margin-bottom: 10px;
+    margin-right: 12px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    text-align: center;
+    user-select: none;
+    color: black;
+}
+
+.droppable {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.2s ease;
+    background-color: #eee;
+    border: 1px dashed #aaa;
+    color: grey;
+}
+
+.droppableMatched {
+    background-color: #b0f4b0;
+    border: 2px solid green;
+}
+
+.droppableOver {
+    background-color: #d0f0ff;
+}
+
+.dragOverlay {
+    padding: 12px;
+    background-color: #fff;
+    border: 2px dashed #007bff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.error {
+    margin-bottom: 32px;
+    color: red;
+    font-weight: 700;
+}
