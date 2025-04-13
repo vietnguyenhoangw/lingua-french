@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { IDndItem } from "@/components/dnd/dnd.type";
 import { useState } from "react";
 
