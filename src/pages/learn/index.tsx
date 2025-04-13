@@ -1,7 +1,11 @@
-import {shuffle} from 'lodash';
-import LearnVocabPage from "@/ui/learn/learn-vocab-page";
+import {shuffle} from "lodash";
 import {readJsonFile} from "@/helper/file-helper";
-import { IDndItem } from '@/components/dnd/dnd.type';
+import {IDndItem} from "@/components/dnd/dnd.type";
+import dynamic from "next/dynamic";
+
+const LearnVocabPage = dynamic(() => import("@/ui/learn/learn-vocab-page"), {
+    ssr: false,
+});
 
 export default LearnVocabPage;
 
@@ -11,12 +15,14 @@ export function getServerSideProps() {
 
     return {
         props: {
-            enWords: shuffle(enWords.map((w: IDndItem) => {
-                return {
-                    ...w,
-                    matchId: w.id,
-                }
-            })),
+            enWords: shuffle(
+                enWords.map((w: IDndItem) => {
+                    return {
+                        ...w,
+                        matchId: w.id,
+                    };
+                })
+            ),
             frWords: shuffle(frWords),
         },
     };

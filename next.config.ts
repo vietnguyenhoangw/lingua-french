@@ -10,9 +10,6 @@ const withTranspile = withTM([
 
 const nextConfig: NextConfig = {
     reactStrictMode: true,
-    eslint: {
-        ignoreDuringBuilds: true,
-    },
 };
 
 export default withTranspile(nextConfig);
